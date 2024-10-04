@@ -1,0 +1,20 @@
+
+
+body{
+    background-color: rgb(9, 11, 158);
+}
+h1{
+    background-color: pink;
+    color: red;
+  
+    font-family: "Press Start 2P"
+}
+p{
+    color: white;
+}
+#p1{
+    color: brown;
+}
+.old{
+    color: black;
+}

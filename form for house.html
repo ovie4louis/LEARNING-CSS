@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenant, Landlord, and Agent Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 60%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .submit-btn {
+            padding: 10px 20px;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #218838;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Tenant, Landlord, and Agent Information</h2>
+
+        <form action="submit_form.php" method="POST">
+            <!-- Tenant Information Section -->
+            <div class="section">
+                <h3 class="section-title">Tenant Details</h3>
+                <label for="tenant-name">Name:</label>
+                <input type="text" id="tenant-name" name="tenant_name" required>
+
+                <label for="tenant-email">Email:</label>
+                <input type="email" id="tenant-email" name="tenant_email" required>
+
+                <label for="tenant-phone">Phone:</label>
+                <input type="tel" id="tenant-phone" name="tenant_phone" required>
+
+                <label for="tenant-address">Address:</label>
+                <textarea id="tenant-address" name="tenant_address" rows="3" required></textarea>
+            </div>
+
+            <!-- Landlord Information Section -->
+            <div class="section">
+                <h3 class="section-title">Landlord Details</h3>
+                <label for="landlord-name">Name:</label>
+                <input type="text" id="landlord-name" name="landlord_name" required>
+
+                <label for="landlord-email">Email:</label>
+                <input type="email" id="landlord-email" name="landlord_email" required>
+
+                <label for="landlord-phone">Phone:</label>
+                <input type="tel" id="landlord-phone" name="landlord_phone" required>
+
+                <label for="landlord-address">Address:</label>
+                <textarea id="landlord-address" name="landlord_address" rows="3" required></textarea>
+            </div>
+
+            <!-- Agent Information Section -->
+            <div class="section">
+                <h3 class="section-title">Agent Details</h3>
+                <label for="agent-name">Name:</label>
+                <input type="text" id="agent-name" name="agent_name" required>
+
+                <label for="agent-email">Email:</label>
+                <input type="email" id="agent-email" name="agent_email" required>
+
+                <label for="agent-phone">Phone:</label>
+                <input type="tel" id="agent-phone" name="agent_phone" required>
+
+                <label for="agent-company">Company:</label>
+                <input type="text" id="agent-company" name="agent_company" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

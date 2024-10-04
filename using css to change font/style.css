@@ -1,0 +1,23 @@
+body{
+
+background-color: rebeccapurple;
+
+}
+
+h1{
+
+    color: aliceblue;
+    font-family: "Press Start 2P"
+ 
+}
+
+p{
+    color: rgb(29, 170, 16);
+    font-family: "sans-serif", "consolas";
+    font-size: large;
+    font-style: italic;
+    font-weight: 900;
+    font-style: oblique;
+   text-align: left;
+
+}
