@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+    
+#box1{
+    border: 5px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 20px;
+    background-color: greenyellow;
+    padding: 3px;
+    margin: auto;
+    
+}
+#box2{
+    border: 5px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 20px;
+    background-color: greenyellow;
+    padding: 3px;
+}
