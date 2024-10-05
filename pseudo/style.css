@@ -1,0 +1,17 @@
+a:link{
+    color: brown;
+}
+a:visited{
+    color: grey;
+}
+a:hover{
+    color: tomato;
+}
+a:active{
+    color:yellow
+}
+button:hover{
+    color: red;
+    background-color: aqua;
+    border-color: tomato;
+}
