@@ -13,5 +13,20 @@ a:active{
 button:hover{
     color: red;
     background-color: aqua;
-    border-color: tomato;
+    border-color: tomato;   
+}
+/*
+li:nth-child(10){
+    background-color: yellow;
+}
+
+li:nth-child(even){
+    background-color: blue;
+}
+li:nth-child(odd){
+    background-color: blueviolet;
+}
+    */
+li:nth-child(2n+1){
+    background-color: brown;
 }
