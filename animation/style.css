@@ -1,0 +1,53 @@
+#box1{
+    width: 250px ;
+    height: 250px;
+    background: red;
+    font-size: 225px;
+    text-align: center;
+/*
+    animation: myslide;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-play-state: running;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    */
+   /* animation: 3s linear 0s infinite running myrotate;*/
+   /* animation: 3s linear 0s infinite running myopacity;*/
+    /* animation: 3s linear 0s infinite running myscale;*/
+    animation: 3s linear 0s infinite running mycolorchange;
+
+
+}
+/*#box1:hover{
+    animation: 3s linear 0s infinite running myrotate;
+}*/
+
+@keyframes myslide{
+    from{margin-left: 0%;}
+    to{margin-left: 100%;}
+}
+@keyframes myrotate{
+   /* 100%{transform: rotateX(360deg);}*/
+   /* 100%{transform: rotatey(360deg);}*/
+    100%{transform: rotatez(360deg);}
+}
+
+@keyframes myopacity{
+    50%{opacity: 0;}
+}
+
+@keyframes myscale{
+    50%{transform: scale(0.5, 0.5);}
+    
+    
+}
+
+@keyframes mycolorchange{
+    0%{background-color: red;}
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    80%{background-color: blue;}
+    100%{background-color: purple;}
+}
